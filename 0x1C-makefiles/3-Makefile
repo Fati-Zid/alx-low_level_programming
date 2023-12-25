@@ -4,7 +4,7 @@
 CC = gcc
 
 # Source files
-SRC = main.c file1.c file2.c
+SRC = main.c school.c
 
 # Object files
 OBJ = $(SRC:.c=.o)
@@ -26,7 +26,7 @@ $(NAME): $(OBJ)
 
 # Rule to clean Emacs, Vim temporary files, executable, and object files
 clean:
-	$(RM) *~ *# .#* $(NAME)
+	$(RM) *~ $(NAME)
 
 # Rule to delete object files
 oclean:
@@ -34,7 +34,6 @@ oclean:
 
 # Rule to clean all Emacs, Vim temporary files, executable, and object files
 fclean: clean oclean
-	$(RM) $(NAME)
 
 # Rule to force recompilation of all source files
 re: fclean all
