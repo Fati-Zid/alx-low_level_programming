@@ -1,20 +1,12 @@
 #!/usr/bin/python3
-
 def island_perimeter(grid):
-    """
-    Calculates the perimeter of the island described in the grid.
-
-    Args:
-        grid (List[List[int]]): A list of lists of integers where 0 represents
-                               water and 1 represents land.
-
-    Returns:
-        int: The perimeter of the island.
-    """
+    #    Calculates the perimeter of the island described in the grid.    Args:        grid (List[List[int]]): A list of lists of integers where 0 represents                               water and 1 represents land.    Returns:        int: The perimeter of the island. #
     perimeter = 0
 
     for i in range(len(grid)):
+        '''for 1'''
         for j in range(len(grid[i])):
+           ''' for 2 '''
             if grid[i][j] == 1:
                 perimeter += 4
 
